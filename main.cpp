@@ -9,19 +9,21 @@ int main() {
         cout << "errore\n";
     }
     else {
-
         int c=0;
         cout << a << endl;
         cout << b << endl;
-        while (c<(n-2)){
+        while (c<(n-2)) {
             c++;
-            f=a+b;
-            if (f<=n) {
+            f = a + b;
+            if (f <= n) {
                 cout << f << endl;
                 a = b;
                 b = f;
             }
+        else {
+                break;
+                }
+            }
         }
+      return 0;
     }
-    return 0;
-}
